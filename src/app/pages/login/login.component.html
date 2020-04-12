@@ -1,0 +1,100 @@
+<div class="container-fluid body-login full-height">
+
+    <div class="row">
+        <div class="col-xs-12  col-md-6 col-lg-5 col-xl-4 authfy-panel-left d-none d-md-block d-sm-block d-xs-block">
+            <div class="text-white p-3 auth-img-left">
+
+                <h1 class="font-weight-bold mt-5">
+                    MAKE IT <br> YOURS.
+                </h1>
+                <p class="mt-5">
+                    With a <a href="#" class="stretched-link text-white">bethesda.net</a><br> account, you can <br>
+                    costomize your <br> experience by following <br>
+                    games, videos, and <br> other content.
+                </p>
+
+                <img class="logo fixed-bottom" src="assets/img/bethesda.png">
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-7 col-xl-8">
+            <div class="d-flex justify-content-center">
+                <div class="d-flex align-items-center" style="height: 100vh;">
+                    <div class="">
+                        <img class="logo mb-5 d-xl-none d-md-none" width="150" src="assets/img/bethesda.png">
+                        <mat-tab-group mat-align-tabs="end">
+                            <mat-tab label="LOG IN">
+                                <br><br><br><br><br>
+                                <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+
+                                    <mat-form-field class="full-width">
+                                        <mat-label>E-MAIL</mat-label>
+                                        <input matInput formControlName="email"
+                                            type="text" autofocus>
+                                    </mat-form-field>
+                                    <br>
+
+                                    <mat-form-field class="full-width">
+                                        <mat-label>PASSWORD</mat-label>
+                                        <input matInput formControlName="password"
+                                            type="password">
+                                    </mat-form-field>
+
+                                    <!-- remember -->
+                                    <br><br>
+                                    <mat-checkbox class="ml-3">Remember?</mat-checkbox>
+                                    <br><br>
+                             
+                                    <button class="btn-block btn-login" mat-flat-button color="primary" type="submit"
+                                    [disabled]="loginForm.invalid"> <b>LOG IN</b> </button>
+                            
+                                </form>
+                            </mat-tab>
+                            
+                            <mat-tab label="SIGN UP">
+                                
+        
+                                <br><br><br><br>
+                                <form [formGroup]="signupForm" (ngSubmit)="signupFormSubmit()">
+
+                                    <mat-form-field class="full-width">
+                                        <mat-label>NAME</mat-label>
+                                        <input matInput type="text"  formControlName="name">
+                                    </mat-form-field>
+
+                                    <mat-form-field class="full-width">
+                                        <mat-label>E-MAIL</mat-label>
+                                        <input matInput formControlName="email" type="text" autofocus>
+                                    </mat-form-field>
+
+                                    <mat-form-field class="full-width">
+                                        <mat-label>PASSWORD</mat-label>
+                                        <input matInput formControlName="password"
+                                            type="password">
+                                    </mat-form-field>
+
+                                    <mat-form-field class="full-width">
+                                        <mat-label>CONFIRM PASSWORD</mat-label>
+                                        <input matInput formControlName="confirmpassword"
+                                            type="password">
+                                    </mat-form-field>
+
+
+                                    <br><br>
+                                    <mat-checkbox class="ml-3">By signing up i agree with the <b color="primary">Terms & Conditions</b></mat-checkbox>
+                                    <br><br>
+                             
+                                    <button class="btn-block btn-login" mat-flat-button color="primary" type="submit"
+                                    [disabled]="signupForm.invalid"> <b>SIGN UP</b> </button>
+                            
+                                </form>
+                            
+                            </mat-tab>
+                        </mat-tab-group>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
