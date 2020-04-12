@@ -6,5 +6,5 @@ Perú. Hoy 12/04/2020, en plena cuarentana, 24 horas en casa, matando tiempo cre
 Aquí los resultados de como quedo.  #quedateEnCasa
 
 
-<img src="assets/img/bethesda-web.png"/>
+<img src="https://raw.githubusercontent.com/breshman/Bethesda-Web/master/src/assets/img/bethesda-web.png"/>
 
